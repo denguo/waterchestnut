@@ -1,79 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title></title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #D2B48C;
-}
-
-/* Style the header */
-header {
-  padding: 5px;
-  text-align: center;
-  font-size: 15px;
-  color: black;
-}
-
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-  height: 75vh;
-}
-
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  vertical-align: bottom;
-}
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-a {
-  color: blue;
-}
-
-</style>
+	<title>后trunk</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
 
-<header>
-  <h2>Title</h2>
+<body>
+	<!-- Header -->
+	<header id="masthead">
+		<div id="site-title">
+			<a href="http://houtrunk.com">后trunk</a>
+		</div>
+	</header>
+	<div id="wrapper">
+
+		<!-- TODO: Menu (home, about, contacts). potentially dropdown. -->
+		
+		<!-- Main -->
+		<main id="main">
+			<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+				<div class="content">
+					<p><img src="images/1.png" class="image"></p>
+					<p><img src="images/2.png" class="image"></p>
+					<p><img src="images/3.png" class="image"></p>
+					<p><img src="images/4.png" class="image"></p>
+				</div>
+			</article>
+		</main>
+	</div>
+
+<!-- <header>
+  <h2>My manga story</h2>
 </header>
 
-<section>
+<div class="grid">
+  <div class="row"><img src="images/1.png" class="img1"></div>
+  <div class="row"><img src="images/2.png" class="img1"></div>
+  <div class="row"><img src="images/3.png" class="img1"></div>  
+  <div class="row"><img src="images/4.png" class="img1"></div>  
+</div> -->
+
+<!-- <section>
   
 	<article>
-    <center>
-      <a href="chapter1/chapter1.html" target="_blank">Chapter 1: prelude</a>&nbsp;&nbsp;<a href="chapter2/chapter2.html" target="_blank">Chapter 2: start</a>&nbsp;&nbsp;<a href="chapter3/chapter3.html" target="_blank">Chapter 3: end</a> 
-    </center>
-<!-- 	     <center>
+	     <center>
 	     <br /> 
 	     <p style="font-family:sans-serif">Story summary</p>
 	     <br />
@@ -84,13 +56,13 @@ a {
 	     Chapter 7 is coming... 
 	     <br /><br />
 	     <br /><br />
-	     </center>   -->
+	     </center>  
 	</article>
-</section>
+</section> -->
 
-<footer>
-  <p><a href="http://twitter.com/ONE_rakugaki">twitter</a> <a href="http://form1.fc2.com/form/?id=498522">gmail</a></p>
-</footer>
-
+<!-- TODO: Footer (twitter, insta, gmail, artstation?) -->
+	<footer>
+	  <p><a href="http://twitter.com">twitter</a></p>
+	</footer>
 </body>
 </html>
