@@ -1,62 +1,304 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
-}
-
-p {
-  margin: 0 0 1.5em;
+  color: inherit;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f0f0f5;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
-/* Header */
-header {
-  text-align: center;
-  font-size: 15px;
-  color: black;
-  background-color: darkgray;
+/*--------------Header------------------*/
+.header {
 }
 
-#masthead {
-  height: 20vh;
-  min-height: 100px;
-  background-image: url("../images/cover-3.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 0;
-  position: relative;
-  width: 100%;
-  filter: grayscale(100%);
+.header-wrapper {
+    display: flex;
+    /*justify-content: space-between;*/
+    width: 75%;
+    margin: auto;
+    padding-top: 10vh;
 }
 
-#site-title {
-  padding: 30px;
+.header-navbar {
+    padding: 1vw;
+    width: 100%;
+}
+
+.header-navbar a {
+    padding: 1vw;
+    font-size: 16px;
+}
+
+.header-logo {
+  padding: 1vw;
   line-height: 100%;
-  font-size: 2rem;
+  /*text-transform: uppercase;*/
+  text-align: center;
+  width: 100%;
 }
 
-#site-title a {
-  color: #ffffff;
-  border-color: #ffffff;
-  border: 4px solid #ffffff;
-  letter-spacing: 2px;
-  padding: 8px 14px;
+.header-logo a {
+    font-size: 32px;
 }
+
+.header-socials {
+    padding: 20px;
+    width: 100%;
+    text-align: end;
+}
+
+.fa {
+  font-size: 15px;
+  width: 40px;
+  text-align: center;
+}
+
+.project {
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+#title {
+    font-size: 24px;
+}
+
 
 /* Main */
 #wrapper {
   padding: 10vh 0;
 }
 
-.content {
+/*.content {
+  margin: auto;
+  max-width: 700px;
+  background-color: white;
+  padding: 100px;
+}*/
+
+/*@media(max-width:1200px) {
+  .content {
+    max-width: 500px;
+  }
+}*/
+
+/*@media(max-width:1024px) {
+  .content {
+    max-width: 650px;
+  }
+}*/
+
+/*@media(max-width:768px) {
+  .content {
+    max-width: 600px;
+    padding: 5vw;
+  }
+}
+
+@media(max-width:480px) {
+  .content {
+    max-width: 450px;
+    padding: 3vw;
+  }
+}*/
+
+.image
+{
+  /*width: auto ;
+  max-width: 100%;
+  height: auto ;*/
+  width: 500px;
+}
+
+/* Footer */
+.footer {
+  /*padding: 5vh;
+  height: 20vh;*/
+  text-align:    center;
+  vertical-align: bottom;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.footer-socials {
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+/*---------*/
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  /*color: white;*/
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  width: 800px;
+  /*width: auto ;
+  max-width: 100%;*/
+  cursor: -moz-zoom-in; 
+  cursor: -webkit-zoom-in; 
+  cursor: zoom-in;
+}
+
+/*.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+@media(max-width:768px) {
+  img.hover-shadow {
+    max-width: 600px;
+    /*padding: 5vw;*/
+  }
+}
+
+@media(max-width:480px) {
+  img.hover-shadow {
+    max-width: 450px;
+    /*padding: 3vw;*/
+  }
+}
+
+/*----------------About--------------------*/
+.about {
+    padding: 20px;
+}
+
+.about-wrapper {
+    margin: auto;
+}
+
+.about-image {
+    margin: auto;
+    width: 800px;
+}
+
+#about-hover-shadow {
+    cursor: auto;
+}
+
+/*-------------------Comic----------------------*/
+#comic-wrapper {
+  padding: 10vh 0;
+}
+
+.comic-content {
   margin: auto;
   max-width: 700px;
   background-color: white;
@@ -76,31 +318,22 @@ header {
 }*/
 
 @media(max-width:768px) {
-  .content {
+  .comic-content {
     max-width: 600px;
     padding: 5vw;
   }
 }
 
 @media(max-width:480px) {
-  .content {
+  .comic-content {
     max-width: 450px;
     padding: 3vw;
   }
 }
 
-.image
+.comic-image
 {
   width: auto ;
   max-width: 100%;
   height: auto ;
-}
-
-/* Footer */
-footer {
-  background-color: #9f9fde;
-  padding: 5vh;
-  height: 10vh;
-  text-align: center;
-  vertical-align: bottom;
 }
