@@ -9,10 +9,7 @@ body {
 }
 
 /*--------------Header------------------*/
-.header {
-}
-
-.header-wrapper {
+.topnav {
     display: flex;
     /*justify-content: space-between;*/
     width: 75%;
@@ -48,10 +45,43 @@ body {
     text-align: end;
 }
 
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+  margin: auto;
+  font-size: 20px;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover {
+  color: darkgray;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(#logo) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
 .fa {
   font-size: 15px;
   width: 40px;
   text-align: center;
+}
+
+#welcome-image {
+    width: 800px;
 }
 
 .project {
@@ -59,10 +89,10 @@ body {
     padding-bottom: 5vh;
 }
 
-#title {
+.project-heading {
     font-size: 24px;
+    padding: 10vh;
 }
-
 
 /* Main */
 #wrapper {
@@ -102,12 +132,39 @@ body {
   }
 }*/
 
-.image
-{
-  /*width: auto ;
-  max-width: 100%;
-  height: auto ;*/
-  width: 500px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10vw;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+/*.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}*/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Footer */
@@ -125,24 +182,32 @@ body {
     width: 100%;
 }
 
+.footer-socials a{
+    font-size: 25px;
+    padding: 0 1vw;
+}
+
 
 
 /*---------*/
 
-.row > .column {
-  padding: 0 8px;
+/* Dropdown Menu */
+.menu {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
+.menu-navbar {
+    display: flex;
+    flex-direction: column;
 }
 
 /* The Modal (background) */
@@ -171,7 +236,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: black;
   position: absolute;
   top: 10px;
   right: 25px;
@@ -249,7 +314,7 @@ img.demo {
 
 img.hover-shadow {
   transition: 0.3s;
-  width: 800px;
+  width: 100%;
   /*width: auto ;
   max-width: 100%;*/
   cursor: -moz-zoom-in; 
@@ -277,7 +342,7 @@ img.hover-shadow {
 
 /*----------------About--------------------*/
 .about {
-    padding: 20px;
+    padding: 0 10vw;
 }
 
 .about-wrapper {

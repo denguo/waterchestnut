@@ -4,6 +4,9 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- Javascript -->
+<script type="text/javascript" src="external.js"></script>
+
 <!-- Head -->
 <head>
     <title>Dennis Guo - Comics</title>
@@ -14,28 +17,27 @@
 
 
 <body>
-    <!-- *Header masthead: Tabs (Portfolio, Client Work, About), Dennis Guo (link to Portfolio), socials (email, linkedin, insta) -->
-    <div class="header">
-        <div class="header-wrapper">
-            <div class="header-navbar"> 
-                <a href="index.html" >Portfolio</a>
-                <a href="about.html" >About</a>
-                <a href="comic.html" >Comic</a>
-            </div>
+    <!-- HEADER -->
+    <div class="topnav" id="myTopnav">
+        <div class="header-navbar"> 
+            <a href="index.html">Portfolio</a>
+            <a href="about.html" >About</a>
+            <a href="comic.html"class="active">Comic</a>
+        </div>
 
-            <div class="header-logo">
-                <a href="http://houtrunk.com">DENNIS GUO</a>
-                <div>story artist</div>
-            </div>
+        <div class="header-logo">
+            <a href="http://houtrunk.com" id="logo">DENNIS GUO</a>
+            <div>storyboard artist</div>
+        </div>
 
-            <div class="header-socials">
-                <div class="header-socials-wrapper">
-                    <a href="https://instagram.com/damnifeelalive" target="_blank" class="fa fa-instagram"></a>
-                    <a href="https://www.linkedin.com/in/dennisguo" target="_blank" class="fa fa-linkedin"></a>
-                    <a href = "mailto: dguo66@gmail.com" class="fa fa-envelope"></a>
-                </div>
+        <div class="header-socials">
+            <div class="header-socials-wrapper">
+                <a href="https://instagram.com/damnifeelalive" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/dennisguo" target="_blank" class="fa fa-linkedin"></a>
+                <a href = "mailto: dguo66@gmail.com" class="fa fa-envelope"></a>
             </div>
         </div>
+        <a href="javascript:void(0);" class="icon" id="logo" onclick="openMenu()">&#9776;</a>
     </div>
 
     <div id="comic-wrapper">
@@ -54,13 +56,25 @@
         </article>
     </div>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <div class="footer">
         <div class="footer-socials">
             <a href="https://instagram.com/damnifeelalive" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/dennisguo" target="_blank" class="fa fa-linkedin"></a>
             <a href = "mailto: dguo66@gmail.com" class="fa fa-envelope"></a>
         </div>
+    </div>
+
+    <!-- MENU -->
+    <div id="myMenu" class="menu">
+      <span class="close cursor" onclick="closeMenu()">&times;</span>
+      <div class="modal-content">
+        <div class="menu-navbar">
+            <a href="index.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="comic.html" class="active">Comic</a>
+        </div>
+      </div>
     </div>
 </body>
 </html>
