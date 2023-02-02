@@ -13,13 +13,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet"> 
 </head>
 
 <!-- 
 STRUCTURE 
 *Header banner: Tabs (Portfolio, Client Work, About), Dennis Guo (link to Portfolio), socials (email, linkedin, insta)
 
-*Intro Image: "Dennis Guo Story Portfolio", "www.houtrunk.com", "dguo66@gmail.com"
+*Intro Image: "Dennis Guo Story Portfolio", "www.dguo.art", "dguo66@gmail.com"
 
 *StoryBoard iframe: "Title - Storyboard - Dennis Guo"
 *StoryBoard thumbnail/design image (slideshow if possible)
@@ -41,19 +44,19 @@ STRUCTURE
 	<!-- HEADER -->
     <div class="topnav" id="myTopnav">
         <div class="header-navbar"> 
-            <a href="index.html" class="active">Portfolio</a>
+            <a href="index.html" class="active">Storyboards</a>
             <a href="about.html" >About</a>
-            <a href="comic.html" >Comic</a>
+            <!-- <a href="comic.html" >Comic</a> -->
         </div>
 
         <div class="header-logo">
-            <a href="http://houtrunk.com" id="logo">DENNIS GUO</a>
-            <div>storyboard artist</div>
+            <a href="https://dguo.art" id="logo">DENNIS GUO</a>
+<!--             <div id="subtitle">storyboard artist</div> -->
         </div>
 
         <div class="header-socials">
             <div class="header-socials-wrapper">
-                <a href="https://instagram.com/damnifeelalive" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://instagram.com/dguoart" target="_blank" class="fa fa-instagram"></a>
                 <a href="https://www.linkedin.com/in/dennisguo" target="_blank" class="fa fa-linkedin"></a>
                 <a href = "mailto: dguo66@gmail.com" class="fa fa-envelope"></a>
             </div>
@@ -61,138 +64,254 @@ STRUCTURE
         <a href="javascript:void(0);" class="icon" id="logo" onclick="openMenu()">&#9776;</a>
     </div>
 
-    <!-- Intro Image: "Dennis Guo Story Portfolio", "www.houtrunk.com", "dguo66@gmail.com" -->
+    <!-- Intro Image: "Dennis Guo Story Portfolio", "www.dguo.art", "dguo66@gmail.com" -->
     <div class="project">
-        <div id="intro-banner">
-            <p><img src="images/knight.png" onclick="openModal();currentSlide(1)" class="hover-shadow" id="welcome-image"></p>
+        <p><img src="images/welcome.png" onclick="openModal();currentSlide(1)" class="hover-shadow" id="welcome-image"></p>
+        <div class="intro">
+            <div id="portfolio-title">
+                Dennis Guo - Story Portfolio 2023
+            </div>
+            <div id="portfolio-contact">
+                www.dguo.art
+                <br>
+                dguo66@gmail.com
+            </div>
         </div>
     </div>
 
     <!-- StoryBoard iframe: "Title - Storyboard - Dennis Guo" -->
+    <!-- Hunt for Wilderpeople -->
+    <div class="project" style="background-color: lightgray;">
+        <div class="project-heading">Hunt for the Wilderpeople Reimagined (2022)</div>
+        <div class="embed-dimensions" style="max-width: 1000px; max-height: 600px; margin: 0 auto;">
+            <div class="embed-aspect-ratio" style="padding-bottom: 52.55%; position: relative; height: 0;">
+                <iframe class="embed-content" src="https://speakerdeck.com/player/bfc55e1c4a8545829981d969e333d58d" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="row">
+            <p><img src="images/hfw_title.png" onclick="openModal();currentSlide(2)" class="hover-shadow" id="thumbnail"></p>
+            <p><img src="images/hfw_thumbs_1.png" onclick="openModal();currentSlide(3)" class="hover-shadow" id="thumbnail"></p>
+            <p><img src="images/hfw_thumbs_2.png" onclick="openModal();currentSlide(4)" class="hover-shadow" id="thumbnail"></p>
+        </div>
+    </div>
+
+    <!-- Dragonheart -->
     <div class="project">
-        <div class="embed-dimensions" style="max-width: 940px; max-height: 494px; margin: 0 auto;">
+        <div class="project-heading">Dragonheart Reimagined (2022)</div>
+        <div class="embed-dimensions" style="max-width: 1000px; max-height: 600px; margin: 0 auto;">
+            <div class="embed-aspect-ratio" style="padding-bottom: 52.55%; position: relative; height: 0;">
+                <iframe class="embed-content" src="https://speakerdeck.com/player/8b93c040ea3c4ce3872efff6f359eb79" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="row">
+            <p><img src="images/dragonheart_title.png" onclick="openModal();currentSlide(5)" class="hover-shadow" id="thumbnail"></p>
+            <p><img src="images/dragonheart_thumbs_1.png" onclick="openModal();currentSlide(6)" class="hover-shadow" id="thumbnail"></p>
+            <p><img src="images/dragonheart_thumbs_2.png" onclick="openModal();currentSlide(7)" class="hover-shadow" id="thumbnail"></p>
+        </div>
+    </div>
+
+    <!-- Haunted Bakery -->
+    <div class="project" style="background-color: lightgray;">
+        <div class="project-heading">Haunted Bakery (2022)</div>
+        <div class="embed-dimensions" style="max-width: 1000px; max-height: 600px; margin: 0 auto;">
+            <div class="embed-aspect-ratio" style="padding-bottom: 52.55%; position: relative; height: 0;">
+                <iframe class="embed-content" src="https://speakerdeck.com/player/358a3e7214eb427f8c75ff293c1ba8d7" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="row">
+            <p><img src="images/bakery_thumb.png" onclick="openModal();currentSlide(8)" class="hover-shadow" id="thumbnail"></p>
+        </div>
+    </div>
+
+    <!-- Knight sequence -->
+    <div class="project">
+        <div class="project-heading">Knight and Princess - Story Beats (2022)</div>
+        <div class="embed-dimensions" style="max-width: 1000px; max-height: 600px; margin: 0 auto;">
             <div class="embed-aspect-ratio" style="padding-bottom: 52.55%; position: relative; height: 0;">
                 <iframe class="embed-content" src="https://speakerdeck.com/player/a1c96bce46b94045b02027dd5af1adf3" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0"></iframe>
             </div>
         </div>
 
-        <!-- StoryBoard thumbnail/design image (slideshow if possible) -->
-        <!-- <div id="storyboard-description">
-            <p><img src="images/sb1.png" onclick="openModal();currentSlide(2)" class="hover-shadow"></p>
-            <p><img src="images/sb1_thumbnail.png" onclick="openModal();currentSlide(3)" class="hover-shadow"></p>
-        </div> -->
+        <div class="row">
+            <p><img src="images/knight thumbnails.png" onclick="openModal();currentSlide(9)" class="hover-shadow" id="thumbnail"></p>
+            <p><img src="images/knight boards.png" onclick="openModal();currentSlide(10)" class="hover-shadow" id="thumbnail"></p>
+        </div>
     </div>
 
-    <div class="project">
-        <div class="embed-dimensions" style="max-width: 940px; max-height: 494px; margin: 0 auto;">
+    <!-- Comedy sequence (WIP) -->
+
+    <!-- Mentorship -->
+    <div class="project" style="background-color: lightgray;">
+        <div class="project-heading">Mark Andrews Mentorship (2022) </div>
+        <div class="embed-dimensions" style="max-width: 1000px; max-height: 600px; margin: 0 auto;">
             <div class="embed-aspect-ratio" style="padding-bottom: 52.55%; position: relative; height: 0;">
                 <iframe class="embed-content" src="https://speakerdeck.com/player/18166538cc254e208a200f2e55af3896" title="Mark Andrews Mentorship" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0"></iframe>
             </div>
         </div>
     </div>
 
-    <!-- Sketchbook -->
+     <!-- Film Studies -->
     <div class="project">
-        <div class="project-heading">Sketchbook</div>      
+        <div class="project-heading">Film Studies</div>
         <div class="row">
-            <div class="column">
-                <p><img src="images/ball-1.png" onclick="openModal();currentSlide(2)" class="hover-shadow"></p>
-                <p><img src="images/ball-2.png" onclick="openModal();currentSlide(3)" class="hover-shadow"></p>
-                <p><img src="images/ball-3.png" onclick="openModal();currentSlide(4)" class="hover-shadow"></p>
-            </div>
-            <div class="column">
-                <p><img src="images/ball-4.png" onclick="openModal();currentSlide(5)" class="hover-shadow"></p>
-                <p><img src="images/ball-5.png" onclick="openModal();currentSlide(6)" class="hover-shadow"></p>
-                <p><img src="images/f-1.png" onclick="openModal();currentSlide(7)" class="hover-shadow"></p>
-            </div>
-            <div class="column">
-                <p><img src="images/figure.png" onclick="openModal();currentSlide(8)" class="hover-shadow"></p>
-                <p><img src="images/f-2.png" onclick="openModal();currentSlide(9)" class="hover-shadow"></p>
-            </div>
-            <div class="column">
-                <p><img src="images/f-3.png" onclick="openModal();currentSlide(10)" class="hover-shadow"></p>
-                <p><img src="images/f-4.png" onclick="openModal();currentSlide(11)" class="hover-shadow"></p>
-            </div>
+            <p><img src="images/sideways.png" onclick="openModal();currentSlide(11)" class="hover-shadow" id="thumbnail"></p>
+            <p><img src="images/gwh.png" onclick="openModal();currentSlide(12)" class="hover-shadow" id="thumbnail"></p>
+            <p><img src="images/jojo.png" onclick="openModal();currentSlide(13)" class="hover-shadow" id="thumbnail"></p>
         </div>
     </div>
 
-    <!-- Film Studies -->
-    <!-- <div>Film Studies</div> -->
-
-    <!-- Thank You Image -->
-  <!--   <div class="project">
-        <div>Thank You!
-            <div id="intro-banner">
-            <p><img src="images/thankyou.png" onclick="openModal();currentSlide(7)" class="hover-shadow"></p>
+    <!-- Sketchbook -->
+    <div class="project">
+        <div class="project-heading">Sketchbook</div>
+        <div class="row">
+            <p><img src="images/figure-1.png" onclick="openModal();currentSlide(14)" class="hover-shadow"></p>
+            <p><img src="images/man.png" onclick="openModal();currentSlide(15)" class="hover-shadow"></p>
         </div>
-    </div> -->
-    
+        <div class="row">
+            <p><img src="images/figure1.png" onclick="openModal();currentSlide(16)" class="hover-shadow"></p>
+            <p><img src="images/figure2.png" onclick="openModal();currentSlide(17)" class="hover-shadow"></p>
+            <p><img src="images/figure3.png" onclick="openModal();currentSlide(18)" class="hover-shadow"></p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <p><img src="images/musician.png" onclick="openModal();currentSlide(19)" class="hover-shadow"></p>
+                <p><img src="images/mechanic.png" onclick="openModal();currentSlide(20)" class="hover-shadow"></p>
+                <!-- <p><img src="images/ball.png" onclick="openModal();currentSlide(19)" class="hover-shadow"></p> -->
+            </div>
+            <div class="column">
+                <p><img src="images/nice.png" onclick="openModal();currentSlide(21)" class="hover-shadow"></p>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <p><img src="images/ski.png" onclick="openModal();currentSlide(21)" class="hover-shadow"></p>
+            <p><img src="images/ski2.png" onclick="openModal();currentSlide(22)" class="hover-shadow"></p>
+            <p><img src="images/vi.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow"></p>
+        </div> -->
     </div>
 
     <!-- Footer -->
     <div class="footer">
         <div class="footer-socials">
-            <a href="https://instagram.com/damnifeelalive" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://instagram.com/dguoart" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/dennisguo" target="_blank" class="fa fa-linkedin"></a>
             <a href = "mailto: dguo66@gmail.com" class="fa fa-envelope"></a>
         </div>
     </div>
 
-    <!-- ******** -->
     <!-- The Modal/Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
 
         <div class="mySlides">
-          <img src="images/knight.png" style="width:100%" class="image">
+          <img src="images/welcome.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/ball-1.png" style="width:100%" class="image">
+          <img src="images/hfw_title.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/ball-2.png" style="width:100%" class="image">
+          <img src="images/hfw_thumbs_1.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/ball-3.png" style="width:100%" class="image">
+          <img src="images/hfw_thumbs_2.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/ball-4.png" style="width:100%" class="image">
+          <img src="images/dragonheart_title.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/ball-5.png" style="width:100%" class="image">
+          <img src="images/dragonheart_thumbs_1.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/f-1.png" style="width:100%" class="image">
+          <img src="images/dragonheart_thumbs_2.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/figure.png" style="width:100%" class="image">
+          <img src="images/bakery_thumb.png" class="modal-image">
+        </div>
+
+        <!-- <div class="mySlides">
+          <img src="images/dragonheart_thumbs_3.png" class="modal-image">
+        </div> -->
+
+        <div class="mySlides">
+          <img src="images/knight thumbnails.png" class="modal-image">
+        </div>
+        <div class="mySlides">
+          <img src="images/knight boards.png" class="modal-image">
+        </div>
+        
+        <div class="mySlides">
+          <img src="images/sideways.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/f-2.png" style="width:100%" class="image">
+          <img src="images/gwh.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/f-3.png" style="width:100%" class="image">
+          <img src="images/jojo.png" class="modal-image">
         </div>
 
         <div class="mySlides">
-          <img src="images/f-4.png" style="width:100%" class="image">
+          <img src="images/figure-1.png" class="modal-image">
         </div>
+        <div class="mySlides">
+          <img src="images/man.png" class="modal-image">
+        </div>
+
+        <div class="mySlides">
+          <img src="images/figure1.png" class="modal-image">
+        </div>
+        <div class="mySlides">
+          <img src="images/figure2.png" class="modal-image">
+        </div>
+        <div class="mySlides">
+          <img src="images/figure3.png" class="modal-image">
+        </div>
+
+        <div class="mySlides">
+          <img src="images/musician.png" class="modal-image">
+        </div>
+        <div class="mySlides">
+          <img src="images/mechanic.png" class="modal-image">
+        </div>
+        <div class="mySlides">
+          <img src="images/nice.png" style="width:50%" class="modal-image">
+        </div>
+
+        <!-- <div class="mySlides">
+          <img src="images/ski.png" style="width:50%" class="modal-image">
+        </div>
+        <div class="mySlides">
+          <img src="images/ski2.png" style="width:50%" class="modal-image">
+        </div>
+        <div class="mySlides">
+          <img src="images/vi.jpg" style="width:50%" class="modal-image">
+        </div> -->
 
         <!-- Next/previous controls -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </div>
+
+    <script>
+        window.addEventListener("click", function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
 
     <!-- MENU -->
     <div id="myMenu" class="menu">
@@ -201,7 +320,7 @@ STRUCTURE
         <div class="menu-navbar">
             <a href="index.html" class="active">Portfolio</a>
             <a href="about.html" >About</a>
-            <a href="comic.html" >Comic</a>
+            <!-- <a href="comic.html" >Comic</a> -->
         </div>
       </div>
     </div>

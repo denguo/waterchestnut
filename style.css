@@ -6,6 +6,7 @@ a {
 body {
   /*font-family: Arial, Helvetica, sans-serif;*/
   font-family: "Lucida Console", "Courier New", monospace;
+  /*font-family: 'Amatic SC', cursive;*/
 }
 
 /*--------------Header------------------*/
@@ -14,7 +15,13 @@ body {
     /*justify-content: space-between;*/
     width: 75%;
     margin: auto;
-    padding-top: 10vh;
+    padding-top: 8vh;
+}
+
+@media screen and (max-width: 820px) {
+  .topnav {
+    padding-top: 4vh;
+  }
 }
 
 .header-navbar {
@@ -36,7 +43,18 @@ body {
 }
 
 .header-logo a {
+    white-space: nowrap;
     font-size: 32px;
+}
+
+@media screen and (max-width: 480px) {
+  .header-logo a {
+    font-size: 24px;
+  }
+}
+
+#subtitle {
+    font-size: 13px;
 }
 
 .header-socials {
@@ -47,8 +65,9 @@ body {
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #04AA6D;
-  color: white;
+  /*background-color: #04AA6D;
+  color: white;*/
+  font-weight: bold;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -81,7 +100,39 @@ body {
 }
 
 #welcome-image {
-    width: 800px;
+    width: 1000px;
+}
+
+#thumbnail {
+    width: 400px;
+    padding: 0 0.2vw;
+}
+
+.intro {
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#portfolio-title {
+    font-size: 4vw;
+    padding: 0 1vw;
+}
+
+#portfolio-contact {
+    font-size: 2vw;
+    padding: 0 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    #portfolio-title {
+    font-size: 25px;
+    }
+
+    #portfolio-contact {
+    font-size: 20px;
+    }
 }
 
 .project {
@@ -91,7 +142,14 @@ body {
 
 .project-heading {
     font-size: 24px;
-    padding: 10vh;
+    padding: 5vh 0;
+}
+
+@media screen and (max-width: 480px) {
+  .project-heading {
+    font-size: 16px;
+    padding: 2vh 0;
+  }
 }
 
 /* Main */
@@ -132,16 +190,22 @@ body {
   }
 }*/
 
+.film {
+  display: flex;
+  padding: 5vh;
+}
+
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 10vw;
+  /*flex-wrap: wrap;*/
+  padding: 0 5vw;
+  justify-content: center;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 24%;
-  max-width: 25%;
+  flex: 48%;
+  max-width: 50%;
   padding: 0 4px;
 }
 
@@ -152,20 +216,20 @@ body {
 }*/
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/*@media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
+    flex: 48%;
     max-width: 50%;
   }
-}
+}*/
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
-}
+}*/
 
 /* Footer */
 .footer {
@@ -173,12 +237,11 @@ body {
   height: 20vh;*/
   text-align:    center;
   vertical-align: bottom;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-socials {
-    padding: 20px;
     width: 100%;
 }
 
@@ -221,7 +284,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: rgba(255, 255, 255, .9);
 }
 
 /* Modal Content */
@@ -254,6 +317,7 @@ body {
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  text-align: center;
 }
 
 /* Next & previous buttons */
@@ -272,6 +336,9 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+/*  display: block;
+  width: 30vw;
+  height: 100vh;*/
 }
 
 /* Position the "next button" to the right */
@@ -315,38 +382,49 @@ img.demo {
 img.hover-shadow {
   transition: 0.3s;
   width: 100%;
-  /*width: auto ;
-  max-width: 100%;*/
+  width: auto ;
+  max-width: 100%;
   cursor: -moz-zoom-in; 
   cursor: -webkit-zoom-in; 
   cursor: zoom-in;
+}
+
+.modal-image {
+    width: 80%;
 }
 
 /*.hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }*/
 
+/*
 @media(max-width:768px) {
   img.hover-shadow {
     max-width: 600px;
-    /*padding: 5vw;*/
+  }
+}
+
+@media(max-width:600px) {
+  img.hover-shadow {
+    max-width: 500px;
   }
 }
 
 @media(max-width:480px) {
   img.hover-shadow {
-    max-width: 450px;
-    /*padding: 3vw;*/
+    max-width: 440px;
   }
-}
+}*/
 
 /*----------------About--------------------*/
-.about {
-    padding: 0 10vw;
+.about-blurb {
+    padding: 0 30vw;
 }
 
 .about-wrapper {
     margin: auto;
+    text-align: left;
+    padding: 10vh 0;
 }
 
 .about-image {
@@ -356,6 +434,10 @@ img.hover-shadow {
 
 #about-hover-shadow {
     cursor: auto;
+}
+
+.about-p {
+    color: #1d78b4;
 }
 
 /*-------------------Comic----------------------*/
